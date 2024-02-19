@@ -3,11 +3,17 @@
 :root {
     --font-bold: "Prompt", sans-serif;
     --font-regular: "Poppins", sans-serif;
-    --colour-regular: #030407;
+    --colour-regular: #3a3a3a;
     --bg-regular: #fbfcfe;
+    --bg-secondary: #f3f3f6;
     --colour-primary: #3351d7;
     --colour-secondary: #8499f5;
     --colour-accent: #5572f7;
+}
+
+::selection {
+    background-color: var(--colour-accent);
+    color: var(--bg-regular);
 }
 
 * {
@@ -27,6 +33,10 @@ html, body {
     height: 100vh;
 
     background-color: var(--bg-regular);
+
+    display: flex;
+    flex-direction: row;
+
 }
 
 h1 {
@@ -34,7 +44,26 @@ h1 {
     font-size: 3.3rem;
     letter-spacing: -1px;
     word-spacing: -2px;
+    position: relative;
 }
+
+h1 > img {
+    position: absolute;
+    left: -3.3rem;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+a {
+    color: var(--colour-primary);
+    text-decoration: underline 2px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 
 .wrapper {
     width: 100vw;
@@ -42,23 +71,14 @@ h1 {
     padding: 5rem 10rem;
 }
 
-.header {
-    height: max-content;
-    text-align: center;
+.mini {
+    font-size: 0.8rem;
 }
 
-.header > a {
-    background-color: var(--colour-primary);
-    padding: 15px 45px;
-    border-radius: 10px;
-    color: var(--bg-regular);
-    border: 1px solid var(--bg-regular);
-    font-size: 1rem;
-    text-decoration: none;
-    margin: 0px 30px;
+.focus {
+    color: var(--colour-primary);
 }
 
-.header > a:hover {
-    text-decoration: underline;
-    transform: translate(100px);
+.content {
+    margin: 1rem 0.8rem;
 }
