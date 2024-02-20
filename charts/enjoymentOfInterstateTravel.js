@@ -1,7 +1,7 @@
-var enjoymentOfInternationalTravel = echarts.init(document.getElementById('enjoymentOfInternationalTravel'));
-var enjoymentOfInternationalTravelOptions = {
+var enjoymentOfInterstateTravel = echarts.init(document.getElementById('enjoymentOfInterstateTravel'));
+var enjoymentOfInterstateTravelOptions = {
   title: {
-    text: 'Enjoyment of International Travel'
+    text: 'Enjoyment of Interstate Travel'
   },
   tooltip: {
     trigger: 'axis',
@@ -26,10 +26,10 @@ var enjoymentOfInternationalTravelOptions = {
         align: "center"
       },
       type: 'bar',
-      data: [2, 1, 6, 9, 28]
+      data: [1, 5, 12, 20, 8]
     }
   ]
 };
 
-enjoymentOfInternationalTravel.setOption(enjoymentOfInternationalTravelOptions);
+enjoymentOfInterstateTravel.setOption(enjoymentOfInterstateTravelOptions);
 
