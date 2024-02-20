@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Holiday Destinations</title>
+
     <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/libs/jquery-jvectormap-2.0.5.css">
+
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
 </head>
+<body>
     <div class="wrapper">
 
         <h1>
             <img src="/favicon.svg" alt="Location Marker Icon" style="width: 2.5rem;">Holiday Destinations of Australians
         </h1>
-
-        <!-- <img src="/images/luca-bravo-O453M2Liufs-unsplash.jpg" alt="Row boat in a lake surrounded by scenic mountain ranges covered in pine trees.">
-        <p class="mini">
-            Photo by Luca Bravo on Unsplash
-        </p> -->
 
         <div class="content">
 
@@ -26,20 +26,56 @@
 
             <h2>General Data</h2>
 
-            <div id="countriesVisited" style="width: 600px;height:400px;"></div>
-            <div id="ethnicitysOfParticipants" style="width: 600px;height:400px;"></div>
-            <div id="enjoymentOfInternationalTravel" style="width: 600px;height:400px;"></div>
+            <div class="map" id="map_world" style="width: 100%;height: 500px;"></div>
+            <div class="map" id="map_au" style="width: 100%;height: 500px;"></div>
+
+            <div class="chartLeft">
+                <div class="chart" id="countriesVisited" style="width: 600px;height:400px;"></div>
+                <p>
+                    Hello right
+                </p>
+            </div>
+
+            <div class="chartRight">
+                <p>
+                    Hello left
+                </p>
+                <div class="chart" id="ethnicitysOfParticipants" style="width: 600px;height:400px;"></div>
+            </div>
+
+            <div class="chart" id="enjoymentOfInternationalTravel" style="width: 600px;height:400px;"></div>
+
             <div id="enjoymentOfInterstateTravel" style="width: 600px;height:400px;"></div>
+            <div id="averageIncome" style="width: 600px;height:400px;"></div>
 
         </div>
 
     </div>
 
+    <!-- Import eCharts js lib -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+    <!-- This pains me to do... -->
+    <!-- Import jquery because jVectorMap needs it... -->
+    <script src="/libs/jquery-3.7.1.min.js"></script>
+
+    <!-- Import jVectorMap js lib and css from file -->
+    <script src="/libs/jquery-jvectormap-2.0.5.min.js"></script>
+
+    <!-- Import the world and au vector maps (mercator projection) -->
+    <script src="/libs/jquery-jvectormap-world-merc.js"></script>
+    <script src="/libs/jquery-jvectormap-au-merc.js"></script>
+
+    <!-- Import charts from charts folder -->
     <script src="charts/countriesVisited.js"></script>
     <script src="charts/ethnicitysOfParticipants.js"></script>
     <script src="charts/enjoymentOfInternationalTravel.js"></script>
     <script src="charts/enjoymentOfInterstateTravel.js"></script>
+    <script src="charts/averageIncome.js"></script>
+
+    <!-- Import maps from maps folder -->
+    <script src="/maps/world.js"></script>
+    <script src="/maps/australia.js"></script>
 
 </body>
 </html>

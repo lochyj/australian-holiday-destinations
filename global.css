@@ -90,3 +90,26 @@ a:hover {
 .content {
     margin: 1rem 0.8rem;
 }
+
+.chartRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.chartLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+/* Fix the plus and minus button size */
+.map > * > * {
+    font-size: 0.8rem;
+}
+
+.map {
+    border: 1px solid var(--bg-secondary);
+    border-radius: 1rem;
+    padding: 5px;
+    margin: 1rem;
+}
