@@ -9,10 +9,15 @@ var enjoymentOfInternationalTravelOptions = {
   },
   xAxis: {
     name: "Enjoyment level",
+    nameLocation: 'middle',
+    nameGap: 50,
     data: ["1", "2", "3", "4", "5"]
   },
   yAxis: {
-    name: "Number of participants who agree"
+    name: "Number of participants who agree",
+    type : 'value',
+    nameLocation: 'middle',
+    nameGap: 30,
   },
   series: [
     {
