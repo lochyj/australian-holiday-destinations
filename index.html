@@ -13,50 +13,51 @@
 </head>
 <body>
     <div class="header acrylic">
-        <a href="/" class="page" style="grid-column: 2;">link 1</a>
-        <a href="/" class="page" style="grid-column: 3;">link 2</a>
-        <a href="/" class="page" style="grid-column: 4;">link 3</a>
-        <a href="/" class="page" style="grid-column: 5;">link 4</a>
-        <a href="/" class="page" style="grid-column: 6;">link 5</a>
+        <a href="/" class="page" style="grid-column: 2;">Home</a>
+        <a href="/general/" class="page" style="grid-column: 3;">General Data</a>
+        <a href="/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
+        <a href="/" class="page" style="grid-column: 5;">...</a>
+        <a href="/" class="page" style="grid-column: 6;">Conclusion</a>
+    </div>
+    <div class="splash">
+        <img src="/images/blue_marble.png" alt="Image of the earth from space" style="max-width: 25rem;">
     </div>
     <div class="wrapper">
 
-        <h1>
-            <img src="/favicon.svg" alt="Location Marker Icon" style="width: 2.5rem;">Holiday Destinations of Australians
-        </h1>
+        <div class="spacer"></div>
 
         <div class="content">
+            <h1>
+                Holiday Destinations of Australians
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora error eveniet veniam, voluptatum magnam repudiandae et quis dolorum dolores veritatis tempore ea, a sunt eligendi enim quaerat nihil animi?
+            Blanditiis, iste. Nam odit cupiditate quae ipsa. Maxime sunt numquam voluptates repellat magni incidunt perferendis architecto. Aliquid ipsum dicta, a omnis, quia eaque consectetur consequuntur doloremque animi optio, dignissimos praesentium.
+            Magnam veniam error officiis totam reiciendis aut repellat autem veritatis deleniti earum cumque, commodi consectetur quos accusantium odio nemo impedit, rem quia ducimus iste assumenda beatae sapiente a? Modi, omnis.
+            Quo eos quis soluta ullam alias deserunt animi rem aperiam aliquam officiis recusandae enim odio excepturi, a laborum facilis rerum porro, architecto culpa. Quos ex, deserunt minus illo pariatur sit.
+            Excepturi vel molestiae iste cupiditate quasi maxime quam quod sequi voluptatibus corporis atque, unde delectus doloribus quisquam odio minus cumque nihil asperiores rerum. Natus debitis obcaecati officia, facilis amet et.</p>
 
-            <p>For our investigation, we chose to research the holiday tendencies of australians and investigate why those decisions were made.</p>
-
-            <br>
-
-            <h2>General Data</h2>
-
-            <div class="map" id="map_world" style="width: 100%;height: 500px;"></div>
-            <div class="map" id="map_au" style="width: 100%;height: 500px;"></div>
-
-            <div class="chartLeft">
+            <!-- <div class="chartLeft">
                 <div class="chart" id="countriesVisited" style="width: 600px;height:400px;"></div>
                 <p>
                     Hello right
                 </p>
-            </div>
-
+            </div> -->
+<!--
             <div class="chartRight">
                 <p>
                     Hello left
                 </p>
                 <div class="chart" id="ethnicitysOfParticipants" style="width: 600px;height:400px;"></div>
-            </div>
+            </div> -->
 
-            <div class="chart" id="enjoymentOfInternationalTravel" style="width: 600px;height:400px;"></div>
-
-            <div id="enjoymentOfInterstateTravel" style="width: 600px;height:400px;"></div>
-            <div id="averageIncome" style="width: 600px;height:400px;"></div>
+            <!-- <div class="chart" id="averageIncome" style="width: 600px;height:400px;"></div> -->
 
         </div>
 
+    </div>
+
+    <div class="footer">
+        Copyright &copy; 2024 Lachlan J, Alex X and Sai K
     </div>
 
     <!-- Import eCharts js lib -->
@@ -83,6 +84,7 @@
     <!-- Import maps from maps folder -->
     <script src="/maps/world.js"></script>
     <script src="/maps/australia.js"></script>
+    <script src="/maps/landing.js"></script>
 
     <script>
         var prevScrollpos = window.scrollY;
