@@ -17,24 +17,19 @@
         <a href="/general/" class="page" style="grid-column: 3;">General Data</a>
         <a href="/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
         <a href="/" class="page" style="grid-column: 5;">...</a>
-        <a href="/" class="page" style="grid-column: 6;">Conclusion</a>
-    </div>
-    <div class="splash">
-        <img src="/images/blue_marble.png" alt="Image of the earth from space" style="max-width: 25rem;">
+        <a href="/conclusion" class="page" style="grid-column: 6;">Conclusion</a>
     </div>
     <div class="wrapper">
-
-        <div class="spacer"></div>
 
         <div class="content">
             <h1>
                 Holiday Destinations of Australians
             </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora error eveniet veniam, voluptatum magnam repudiandae et quis dolorum dolores veritatis tempore ea, a sunt eligendi enim quaerat nihil animi?
+            <p>Lorem, <a href="">ipsum</a> dolor sit amet consectetur <span class="focus">adipisicing elit.</span> Beatae tempora error eveniet veniam, voluptatum magnam repudiandae et quis dolorum dolores veritatis tempore ea, a sunt eligendi enim quaerat nihil animi?
             Blanditiis, iste. Nam odit cupiditate quae ipsa. Maxime sunt numquam voluptates repellat magni incidunt perferendis architecto. Aliquid ipsum dicta, a omnis, quia eaque consectetur consequuntur doloremque animi optio, dignissimos praesentium.
             Magnam veniam error officiis totam reiciendis aut repellat autem veritatis deleniti earum cumque, commodi consectetur quos accusantium odio nemo impedit, rem quia ducimus iste assumenda beatae sapiente a? Modi, omnis.
             Quo eos quis soluta ullam alias deserunt animi rem aperiam aliquam officiis recusandae enim odio excepturi, a laborum facilis rerum porro, architecto culpa. Quos ex, deserunt minus illo pariatur sit.
-            Excepturi vel molestiae iste cupiditate quasi maxime quam quod sequi voluptatibus corporis atque, unde delectus doloribus quisquam odio minus cumque nihil asperiores rerum. Natus debitis obcaecati officia, facilis amet et.</p>
+            Excepturi vel molestiae iste cupiditate quasi maxime quam quod sequi voluptatibus <span class="focus">corporis atque,</span> unde delectus doloribus quisquam odio minus cumque nihil asperiores rerum. Natus debitis obcaecati officia, facilis amet et.</p>
 
             <!-- <div class="chartLeft">
                 <div class="chart" id="countriesVisited" style="width: 600px;height:400px;"></div>
@@ -86,39 +81,8 @@
     <script src="/maps/australia.js"></script>
     <script src="/maps/landing.js"></script>
 
-    <script>
-        var prevScrollpos = window.scrollY;
-
-        /* Get the header element and it's position */
-        var headerDiv = document.querySelector(".header");
-
-        function getAbsoluteHeight(el) {
-            var styles = window.getComputedStyle(el);
-            var margin = parseFloat(styles['marginTop']) +
-                        parseFloat(styles['marginBottom']);
-    
-            return Math.ceil(el.offsetHeight + margin);
-        }
-
-        window.onscroll = function() {
-            var currentScrollPos = window.scrollY;
-            var delta = prevScrollpos - currentScrollPos
-
-            /* if scrolling down, let it scroll out of view as normal */
-            if (delta < 0.5){
-                headerDiv.classList.remove("fixedToTop");
-                headerDiv.style.top = `${-getAbsoluteHeight(headerDiv)}px`;
-            }
-            /* otherwise if we're scrolling up, fix the nav to the top */
-            else {
-                headerDiv.classList.add("fixedToTop");
-                headerDiv.style.top = "0px";
-            }
-
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
+    <!-- Import the header handling code -->
+    <script src="/header.js"></script>
 
 </body>
 </html>
-

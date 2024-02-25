@@ -17,7 +17,7 @@
         <a href="/general/" class="page" style="grid-column: 3;">General Data</a>
         <a href="/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
         <a href="/" class="page" style="grid-column: 5;">...</a>
-        <a href="/" class="page" style="grid-column: 6;">Conclusion</a>
+        <a href="/conclusion" class="page" style="grid-column: 6;">Conclusion</a>
     </div>
     <div class="wrapper">
 
@@ -36,7 +36,7 @@
             <div class="chartRight">
                 <div>
                     <h4>Title left</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="focus">Repudiandae</span>, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
                 </div>
 
                 <img src="/images/chart2.jpg" class="chart" style="width: 600px; height: 400px;">
@@ -50,39 +50,9 @@
     <div class="footer">
         Copyright &copy; 2024 Lachlan J, Alex X and Sai K
     </div>
-
-    <script>
-        var prevScrollpos = window.scrollY;
-
-        /* Get the header element and it's position */
-        var headerDiv = document.querySelector(".header");
-
-        function getAbsoluteHeight(el) {
-            var styles = window.getComputedStyle(el);
-            var margin = parseFloat(styles['marginTop']) +
-                        parseFloat(styles['marginBottom']);
     
-            return Math.ceil(el.offsetHeight + margin);
-        }
-
-        window.onscroll = function() {
-            var currentScrollPos = window.scrollY;
-            var delta = prevScrollpos - currentScrollPos
-
-            /* if scrolling down, let it scroll out of view as normal */
-            if (delta < 0.5){
-                headerDiv.classList.remove("fixedToTop");
-                headerDiv.style.top = `${-getAbsoluteHeight(headerDiv)}px`;
-            }
-            /* otherwise if we're scrolling up, fix the nav to the top */
-            else {
-                headerDiv.classList.add("fixedToTop");
-                headerDiv.style.top = "0px";
-            }
-
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
+    <!-- Import the header handling code -->
+    <script src="/header.js"></script>
 
 </body>
 </html>
