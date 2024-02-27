@@ -1,4 +1,4 @@
-var ethnicitysOfParticipants = echarts.init(document.getElementById('ethnicitysOfParticipants'));
+var ethnicitysOfParticipants = echarts.init(document.getElementById('ethnicitysOfParticipants'), 'dark');
 var ethnicitysOfParticipantsOptions = {
   title: {
     text: 'Ethnicity\'s of participants'
@@ -14,10 +14,9 @@ var ethnicitysOfParticipantsOptions = {
       name: 'Ethnicity\'s of participants',
       type: 'pie',
       data: [
-        {value: 18, name: "White"},
-        {value: 21, name: "Asian"},
-        {value: 4, name: "Other"},
-        {value: 3, name: "Unspecified"}
+        {value: 22, name: "White"},
+        {value: 28, name: "Asian"},
+        {value: 4, name: "Other"}
       ]
     }
   ]

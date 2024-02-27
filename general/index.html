@@ -26,7 +26,7 @@
             <h1>General Data</h1>
 
             <div class="chartLeft">
-                <img src="/images/chart1.jpg" class="chart" style="width: 600px; height: 400px;">
+                <div class="chart" id="countriesVisited" style="width: 600px;height:400px;"></div>
                 <div>
                     <h4>Title Right</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
@@ -39,7 +39,15 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="focus">Repudiandae</span>, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
                 </div>
 
-                <img src="/images/chart2.jpg" class="chart" style="width: 600px; height: 400px;">
+                <div class="chart" id="averageIncome" style="width: 600px;height:400px;"></div>
+            </div>
+
+            <div class="chartLeft">
+                <div class="chart" id="ethnicitysOfParticipants" style="width: 600px;height:400px;"></div>
+                <div>
+                    <h4>Title Right</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
+                </div>
             </div>
 
 
@@ -50,7 +58,15 @@
     <div class="footer">
         Copyright &copy; 2024 Lachlan J, Alex X and Sai K
     </div>
-    
+
+    <!-- Import eCharts js lib -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+    <!-- Import charts from charts folder -->
+    <script src="/charts/countriesVisited.js"></script>
+    <script src="/charts/averageIncome.js"></script>
+    <script src="/charts/ethnicitysOfParticipants.js"></script>
+
     <!-- Import the header handling code -->
     <script src="/header.js"></script>
 
