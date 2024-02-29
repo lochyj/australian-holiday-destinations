@@ -1,4 +1,7 @@
 var ethnicitysOfParticipants = echarts.init(document.getElementById('ethnicitysOfParticipants'), 'dark');
+
+new ResizeObserver(() => ethnicitysOfParticipants.resize()).observe(document.getElementById('ethnicitysOfParticipants'));
+
 var ethnicitysOfParticipantsOptions = {
   title: {
     text: 'Ethnicity\'s of participants'

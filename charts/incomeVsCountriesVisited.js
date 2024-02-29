@@ -1,4 +1,7 @@
 var incomeVsCountriesVisited = echarts.init(document.getElementById('incomeVsCountriesVisited'));
+
+new ResizeObserver(() => incomeVsCountriesVisited.resize()).observe(document.getElementById('incomeVsCountriesVisited'));
+
 var incomeVsCountriesVisitedOptions = {
   title: {
     text: 'Number of countries australians have visited'

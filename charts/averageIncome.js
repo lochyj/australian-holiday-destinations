@@ -1,4 +1,5 @@
 var averageIncome = echarts.init(document.getElementById('averageIncome'), 'dark');
+new ResizeObserver(() => averageIncome.resize()).observe(document.getElementById('averageIncome'));
 var averageIncomeOptions = {
   title: {
     text: 'Average household income of survey participants'

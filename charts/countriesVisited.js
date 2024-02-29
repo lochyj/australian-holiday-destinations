@@ -1,4 +1,7 @@
 var countriesVisited = echarts.init(document.getElementById('countriesVisited'), 'dark');
+
+new ResizeObserver(() => countriesVisited.resize()).observe(document.getElementById('countriesVisited'));
+
 var countriesVisitedOptions = {
   title: {
     text: 'Number of countries australians have visited'

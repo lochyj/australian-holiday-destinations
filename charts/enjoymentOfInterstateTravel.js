@@ -1,4 +1,7 @@
 var enjoymentOfInterstateTravel = echarts.init(document.getElementById('enjoymentOfInterstateTravel'), 'dark');
+
+new ResizeObserver(() => enjoymentOfInterstateTravel.resize()).observe(document.getElementById('enjoymentOfInterstateTravel'));
+
 var enjoymentOfInterstateTravelOptions = {
   title: {
     text: 'Enjoyment of Interstate Travel'
