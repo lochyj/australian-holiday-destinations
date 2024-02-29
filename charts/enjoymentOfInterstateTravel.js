@@ -1,4 +1,4 @@
-var enjoymentOfInterstateTravel = echarts.init(document.getElementById('enjoymentOfInterstateTravel'));
+var enjoymentOfInterstateTravel = echarts.init(document.getElementById('enjoymentOfInterstateTravel'), 'dark');
 var enjoymentOfInterstateTravelOptions = {
   title: {
     text: 'Enjoyment of Interstate Travel'
@@ -26,7 +26,7 @@ var enjoymentOfInterstateTravelOptions = {
         align: "center"
       },
       type: 'bar',
-      data: [1, 5, 12, 20, 8]
+      data: [2, 5, 14, 24, 9]
     }
   ]
 };

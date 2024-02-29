@@ -19,7 +19,7 @@ var incomeVsCountriesVisitedOptions = {
     {
       name: 'Income vs Number of Countries Visited',
       type: 'scatter',
-      data: [0, 5, 7, 10, 5, 3]
+      data: [1, 7, 7.55, 4.46, 7, 10]
     }
   ]
 };

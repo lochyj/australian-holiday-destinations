@@ -1,4 +1,4 @@
-var enjoymentOfInternationalTravel = echarts.init(document.getElementById('enjoymentOfInternationalTravel'));
+var enjoymentOfInternationalTravel = echarts.init(document.getElementById('enjoymentOfInternationalTravel'), 'dark');
 var enjoymentOfInternationalTravelOptions = {
   title: {
     text: 'Enjoyment of International Travel'
@@ -26,7 +26,7 @@ var enjoymentOfInternationalTravelOptions = {
         align: "center"
       },
       type: 'bar',
-      data: [2, 1, 6, 9, 28]
+      data: [2, 5, 14, 24, 9]
     }
   ]
 };
