@@ -25,25 +25,17 @@
 
             <h1>Common Destinations</h1>
 
+            <h2>Quick Data</h2>
             <p>
-                On average, survey participants visited <span class="focus">5.59</span> countries
+                Out of the <span class="focus">55</span> total survey participants; On average, they visited <span class="focus">5.59</span> countries and in total they traveled to <span class="focus">99</span> unique countries.
             </p>
 
             <div class="chartFull">
                 <div>
-                    <h2>Race and continent travelled to</h2>
-                    <p>This shows the different travel locations of people of different ethnicities. The majority of Asian respondents have travelled to Asia, this may be due to family or cultural ties to the continent, while White respondents have travelled to a wider variety of continents. This could be due to travelling for solely tourism rather than other options</p>
+                    <h2>Continental habits of different ethnicities</h2>
+                    <p>This shows the different travel locations of people of different ethnicity's. The majority of Asian respondents have traveled to Asia, this may be due to family or cultural ties to the continent, while White respondents have traveled to a wider variety of continents. This could be due to traveling for solely tourism rather than other options</p>
                 </div>
                 <div class="chart" id="continentsVisitedVsEthnicity" style="width: 100%;height:30rem;"></div>
-            </div>
-
-            <div class="chartRight">
-                <div>
-                    <h4>Title left</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
-                </div>
-
-                <img src="/australian-holiday-destinations/images/chart4.jpg" class="chart" style="width: 600px; height: 400px;">
             </div>
 
             <div class="chartFull">
@@ -51,8 +43,15 @@
                     <h2>Title big</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem nisi neque rerum quod excepturi sunt pariatur recusandae deserunt repellendus quam expedita, obcaecati alias nam consequatur dolor quaerat aperiam commodi?</p>
                 </div>
-                <img src="/australian-holiday-destinations/images/australia.jpg" class="chart">
-                <!-- <div class="chart" id="map_world" style="width: 100%;height:30rem;"></div> -->
+                <div class="chart map" id="map_world" style="width: 100%;height:30rem;"></div>
+            </div>
+
+            <div class="chartFull">
+                <div>
+                    <h2>Title big</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem nisi neque rerum quod excepturi sunt pariatur recusandae deserunt repellendus quam expedita, obcaecati alias nam consequatur dolor quaerat aperiam commodi?</p>
+                </div>
+                <div class="chart map" id="map_au" style="width: 100%;height:30rem;"></div>
             </div>
 
         </div>
@@ -78,9 +77,11 @@
 
     <!-- Import the world and au vector maps (mercator projection) -->
     <script src="/australian-holiday-destinations/libs/jquery-jvectormap-world-merc.js"></script>
+    <script src="/australian-holiday-destinations/libs/jquery-jvectormap-au-merc.js"></script>
 
     <!-- Import maps from maps folder -->
     <script src="/australian-holiday-destinations/maps/world.js"></script>
+    <script src="/australian-holiday-destinations/maps/australia.js"></script>
 
     <!-- Import the header handling code -->
     <script src="/australian-holiday-destinations/header.js"></script>

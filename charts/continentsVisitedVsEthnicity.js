@@ -105,9 +105,6 @@ var continentsVisitedVsEthnicityOptions = {
       type: 'shadow'
     }
   },
-  legend: {
-    data: ['Forest', 'Steppe', 'Desert', 'Wetland']
-  },
   toolbox: {
     show: true,
     orient: 'vertical',
@@ -169,7 +166,7 @@ var continentsVisitedVsEthnicityOptions = {
       emphasis: {
         focus: 'series'
       },
-      data: [1, 2]
+      data: [1, 2, 0, 0]
     },
     {
       name: 'Africa',
