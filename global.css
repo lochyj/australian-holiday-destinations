@@ -78,6 +78,16 @@ h2 {
 
 }
 
+h3 {
+    position: relative;
+
+    font-family: var(--font-bold);
+    font-size: 1.8rem;
+
+    letter-spacing: -1px;
+    word-spacing: -2px;
+}
+
 a {
     color: var(--colour-accent);
 
@@ -93,7 +103,7 @@ a:hover {
 .wrapper {
     width: 100vw;
 
-    padding: 7rem 10rem;
+    padding: 3.5rem 10rem;
 
 }
 
@@ -169,6 +179,7 @@ a:hover {
     box-shadow: #ffffff40 0px 6px 12px -2px, #ffffff4d 0px 3px 7px -3px;
 }
 
+/* There is an issue on ultrawide screens where the header doesn't fill the entire width of the screen. This hopefully isn't my issue. */
 .header {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
@@ -181,7 +192,7 @@ a:hover {
     /* width: calc(100vw - 20px); */ /* <-- Works on firefox but not on chrome. */
     max-width: calc(100vw - 20px);
 
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin: 10px;
 
     background-color: var(--bg-secondary);
@@ -200,13 +211,14 @@ a:hover {
 .header > a {
     min-width: max-content;
 
-    padding: 10px 20px;
+    padding: 7px 15px;
     margin: 5px 10px;
 
     background-color: var(--colour-accent);
     color: var(--colour-regular);
 
     font-weight: bold;
+    font-size: 1rem;
 
     text-align: center;
     text-decoration: none;
@@ -245,6 +257,7 @@ a:hover {
     border-radius: 1rem;
 
     box-shadow: #ffffff40 0px 2px 5px -1px, #ffffff4d 0px 1px 3px -1px;
+
 }
 
 .chart > div > canvas {

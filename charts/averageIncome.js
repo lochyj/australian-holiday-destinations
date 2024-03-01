@@ -5,7 +5,7 @@ var averageIncomeOptions = {
     text: 'Average household income of survey participants'
   },
   tooltip: {
-    data: [1, 5, 8, 11, 5, 2, 3]
+    data: [2, 6, 9, 13, 6, 5, 3]
   },
   legend: {
     data: ['Countries traveled To']
