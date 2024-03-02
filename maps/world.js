@@ -104,11 +104,9 @@ $(function() {
         zoomOnScroll: true,
         regionStyle: {
             initial: {
-                fill: '#fff',
                 "fill-opacity": 1,
                 stroke: '#0a131e',
-                "stroke-width": 1,
-                "stroke-opacity": 1
+                "stroke-width": 0
             },
             hover: {
                 "fill-opacity": 0.8,

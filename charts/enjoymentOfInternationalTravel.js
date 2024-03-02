@@ -29,7 +29,7 @@ var enjoymentOfInternationalTravelOptions = {
         align: "center"
       },
       type: 'bar',
-      data: [2, 5, 14, 24, 9]
+      data: [3, 1, 7, 11, 32]
     }
   ]
 };

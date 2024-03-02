@@ -130,21 +130,12 @@ a:hover {
     margin: 1rem 0.8rem;
 }
 
-.chartRight {
+.chartContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    margin: 2rem 0rem;
+    margin: 5rem 0rem;
 
-}
-
-.chartLeft {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    width: 100%;
-
-    margin: 2rem 0rem;
 }
 
 .chartFull {
@@ -152,12 +143,18 @@ a:hover {
     flex-direction: column;
 
     width: 100%;
+    margin: 5rem 0rem;
 
 }
 
 .chartAligner {
     display: flex;
     flex-direction: row;
+
+}
+
+.chartAligner > * {
+    margin: 1rem 0rem;
 }
 
 .chartFull > div {
