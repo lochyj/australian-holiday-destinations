@@ -1,4 +1,4 @@
-var enjoymentOfInterstateTravel = echarts.init(document.getElementById('enjoymentOfInterstateTravel'), 'dark');
+var enjoymentOfInterstateTravel = echarts.init(document.getElementById('enjoymentOfInterstateTravel'));
 
 new ResizeObserver(() => enjoymentOfInterstateTravel.resize()).observe(document.getElementById('enjoymentOfInterstateTravel'));
 

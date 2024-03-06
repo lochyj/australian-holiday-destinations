@@ -12,62 +12,60 @@
     <link rel="shortcut icon" href="/australian-holiday-destinations/favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="header acrylic">
-        <a href="/australian-holiday-destinations/" class="page" style="grid-column: 2;">Home</a>
-        <a href="/australian-holiday-destinations/general/" class="page" style="grid-column: 3;">Primary Data</a>
-        <a href="/australian-holiday-destinations/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
-        <a href="/australian-holiday-destinations/secondary" class="page" style="grid-column: 5;">Secondary Data</a>
-        <a href="/australian-holiday-destinations/conclusion" class="page" style="grid-column: 6;">Conclusion</a>
-    </div>
-    <div class="wrapper">
+    <div class="main">
+        <div class="sidebar">
+            <img src="/australian-holiday-destinations/images/jmss_logo.svg" alt="The John Monash Science School logo.">
+            <a href="/australian-holiday-destinations/" class="page" style="grid-column: 2;">Home</a>
+            <a href="/australian-holiday-destinations/proposal/" class="page" style="grid-column: 2;">Proposal</a>
+            <a href="/australian-holiday-destinations/general/" class="page" style="grid-column: 3;">Primary Data</a>
+            <a href="/australian-holiday-destinations/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
+            <a href="/australian-holiday-destinations/secondary" class="page" style="grid-column: 5;">Secondary Data</a>
+            <a href="/australian-holiday-destinations/conclusion" class="page" style="grid-column: 6;">Conclusion</a>
+        </div>
 
-        <div class="content">
+        <div class="wrapper">
 
-            <h1>Primary Data</h1>
+            <div class="content">
 
-            <div class="chartContainer">
-                <div class="chart" id="countriesVisited" style="width: 600px;height:400px;"></div>
+                <h1>Primary Data</h1>
+
                 <div>
                     <h4>Number of countries</h4>
                     <p>This graph shows the number of countries each of the respondents had travelled to. <span class="focus"> 56% </span> of respondents have travelled to less than 5 countries, while only <span class="focus">15%</span> had travelled to more than 10 countries.</p>
                 </div>
-            </div>
-            <div class="chartContainer">
+                <div class="chart" id="countriesVisited" style="width: 640px;height:400px;"></div>
+
                 <div>
                     <h4>Travel reasons</h4>
                     <p>This chart shows that the majority of people are traveling for both sightseeing and visiting family/friends, and a significant portion are traveling for sightseeing only, while a much smaller amount are travelling for visiting family/friends only. This is possibly due to visiting family/friends often being combined with sightseeing, so people will do them both on their trip</p>
                 </div>
+                <div class="chart" id="travelReasons" style="width: 640px;height:400px;"></div>
 
-                <div class="chart" id="travelReasons" style="width: 600px;height:400px;"></div>
-            </div>
-
-            <div class="chartFull">
                 <div>
                     <h2>Respondent demographics</h2>
                     <p>These graphs show the demographics of the respondents of the survey, these demographics may not be 100% reflective of the entirety of Australia due to the small sample size and limited community. However these do allow us to have an even distribution of demographics</p>
                 </div>
-                <div class="chartAligner">
-                    <div class="chart" id="averageIncome" style="width: 100%;height:400px;"></div>
-                    <div class="chart" id="ethnicitysOfParticipants" style="width: 100%;height:400px;"></div>
-                </div>
-            </div>
+                <div class="chart" id="averageIncome" style="width: 640px;height:400px;"></div>
+                <div class="chart" id="ethnicitysOfParticipants" style="width: 640px;height:400px;"></div>
 
-            <div class="chartFull">
                 <div>
                     <h2>Holiday enjoyment</h2>
                     <p>These graphs show the enjoyment of the survey respondents for different types of travel, most respondents enjoyed international travel significantly more than interstate travel, with most of respondents selecting an enjoyment of 5 for international travel while the most common response for interstate was only a four.</p>
                 </div>
-                <div class="chartAligner">
-                    <div class="chart" id="enjoymentOfInterstateTravel" style="width: 100%;height:400px;"></div>
-                    <div class="chart" id="enjoymentOfInternationalTravel" style="width: 100%;height:400px;"></div>
-                </div>
+                <div class="chart" id="enjoymentOfInterstateTravel" style="width: 640px;height:400px;"></div>
+                <div class="chart" id="enjoymentOfInternationalTravel" style="width: 640px;height:400px;"></div>
+
+
+            </div>
+
+            <div class="navigator">
+                <a href="/australian-holiday-destinations/proposal/">← Previous</a>
+                <div></div>
+                <a href="/australian-holiday-destinations/destinations/">Next →</a>
             </div>
 
         </div>
-    </div>
 
-    <div class="footer">
-        Copyright &copy; 2024 Lachlan J, Alex X and Sai K
     </div>
 
     <!-- Import eCharts js lib -->
@@ -80,9 +78,6 @@
     <script src="/australian-holiday-destinations/charts/enjoymentOfInternationalTravel.js"></script>
     <script src="/australian-holiday-destinations/charts/enjoymentOfInterstateTravel.js"></script>
     <script src="/australian-holiday-destinations/charts/travelReasons.js"></script>
-
-    <!-- Import the header handling code -->
-    <script src="/australian-holiday-destinations/header.js"></script>
 
 </body>
 </html>

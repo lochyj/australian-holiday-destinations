@@ -12,54 +12,63 @@
     <link rel="shortcut icon" href="/australian-holiday-destinations/favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <div class="header acrylic">
-        <a href="/australian-holiday-destinations/" class="page" style="grid-column: 2;">Home</a>
-        <a href="/australian-holiday-destinations/general/" class="page" style="grid-column: 3;">Primary Data</a>
-        <a href="/australian-holiday-destinations/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
-        <a href="/australian-holiday-destinations/secondary/" class="page" style="grid-column: 5;">Secondary Data</a>
-        <a href="/australian-holiday-destinations/conclusion/" class="page" style="grid-column: 6;">Conclusion</a>
-    </div>
-    <div class="wrapper">
+    <div class="main">
+        <div class="sidebar">
+            <img src="/australian-holiday-destinations/images/jmss_logo.svg" alt="The John Monash Science School logo.">
+            <a href="/australian-holiday-destinations/" class="page" style="grid-column: 2;">Home</a>
+            <a href="/australian-holiday-destinations/proposal/" class="page" style="grid-column: 2;">Proposal</a>
+            <a href="/australian-holiday-destinations/general/" class="page" style="grid-column: 3;">Primary Data</a>
+            <a href="/australian-holiday-destinations/destinations/" class="page" style="grid-column: 4;">Common Destinations</a>
+            <a href="/australian-holiday-destinations/secondary" class="page" style="grid-column: 5;">Secondary Data</a>
+            <a href="/australian-holiday-destinations/conclusion" class="page" style="grid-column: 6;">Conclusion</a>
+        </div>
 
-        <div class="content">
+        <div class="wrapper">
 
-            <h1>Common Destinations</h1>
+            <div class="content">
 
-            <h2>Quick Data</h2>
-            <p>
-                Out of the <span class="focus">55</span> total survey participants; On average, they visited <span class="focus">5.59</span> countries and in total they traveled to <span class="focus">99</span> unique countries.
-            </p>
+                <h1>Common Destinations</h1>
 
-            <div class="chartFull">
+                <h3>Quick Data</h3>
+                <p>
+                    Out of the <span class="focus">55</span> total survey participants; On average, they visited <span class="focus">5.59</span> countries and in total they traveled to <span class="focus">99</span> unique countries.
+                </p>
+
                 <div>
-                    <h2>Continental habits of different ethnicities</h2>
+                    <h3>Continental habits of different ethnicities</h3>
                     <p>This shows the different travel locations of people of different ethnicity's. The majority of Asian respondents have traveled to Asia, this may be due to family or cultural ties to the continent, while White respondents have traveled to a wider variety of continents. This could be due to traveling for solely tourism rather than other options</p>
                 </div>
-                <div class="chart" id="continentsVisitedVsEthnicity" style="width: 100%;height:30rem;"></div>
-            </div>
+                <div class="chart" id="continentsVisitedVsEthnicity" style="width: 640px; height: 500px;"></div>
 
-            <div class="chartFull">
                 <div>
-                    <h2>Title big</h2>
+                    <h3>Title big</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem nisi neque rerum quod excepturi sunt pariatur recusandae deserunt repellendus quam expedita, obcaecati alias nam consequatur dolor quaerat aperiam commodi?</p>
                 </div>
-                <div class="chart map" id="map_world" style="width: 100%;height:30rem;"></div>
-            </div>
+                <div class="chart map" id="map_world" style="width: 640px; height: 600px;"></div>
 
-            <div class="chartFull">
                 <div>
-                    <h2>Title big</h2>
+                    <h3>Title big</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem nisi neque rerum quod excepturi sunt pariatur recusandae deserunt repellendus quam expedita, obcaecati alias nam consequatur dolor quaerat aperiam commodi?</p>
                 </div>
-                <div class="chart map" id="map_au" style="width: 100%;height:30rem;"></div>
+                <div class="chart map" id="map_au" style="width: 640px; height: 500px;"></div>
+
+                <div>
+                    <h3>Title big</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem nisi neque rerum quod excepturi sunt pariatur recusandae deserunt repellendus quam expedita, obcaecati alias nam consequatur dolor quaerat aperiam commodi?</p>
+                </div>
+                <div class="chart map" id="map_world_want" style="width: 640px; height: 600px;"></div>
+
+
+            </div>
+
+            <div class="navigator">
+                <a href="/australian-holiday-destinations/general/">← Previous</a>
+                <div></div>
+                <a href="/australian-holiday-destinations/secondary/">Next →</a>
             </div>
 
         </div>
 
-    </div>
-
-    <div class="footer">
-        Copyright &copy; 2024 Lachlan J, Alex X and Sai K
     </div>
 
     <!-- Import eCharts js lib -->
@@ -81,10 +90,8 @@
 
     <!-- Import maps from maps folder -->
     <script src="/australian-holiday-destinations/maps/world.js"></script>
+    <script src="/australian-holiday-destinations/maps/worldWant.js"></script>
     <script src="/australian-holiday-destinations/maps/australia.js"></script>
-
-    <!-- Import the header handling code -->
-    <script src="/australian-holiday-destinations/header.js"></script>
 
 </body>
 </html>

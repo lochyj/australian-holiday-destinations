@@ -1,6 +1,6 @@
 // Used https://echarts.apache.org/examples/en/editor.html?c=bar-label-rotation as a reference for this one
 
-var continentsVisitedVsEthnicity = echarts.init(document.getElementById('continentsVisitedVsEthnicity'), 'dark');
+var continentsVisitedVsEthnicity = echarts.init(document.getElementById('continentsVisitedVsEthnicity'));
 new ResizeObserver(() => continentsVisitedVsEthnicity.resize()).observe(document.getElementById('continentsVisitedVsEthnicity'));
 
 const posList = [

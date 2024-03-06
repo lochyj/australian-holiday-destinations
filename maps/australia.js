@@ -11,30 +11,26 @@ stateData = {
 $(function() {
     $('#map_au').vectorMap({
         map: 'au_merc',
-        backgroundColor: "#0a131e",
-        zoomOnScroll: false,
+        backgroundColor: "#fbfbfe",
+        zoomOnScroll: true,
         regionStyle: {
             initial: {
-                fill: '#fff',
                 "fill-opacity": 1,
-                stroke: '#0a131e',
-                "stroke-width": 1,
-                "stroke-opacity": 1
+                "stroke": '#050315',
+                "stroke-width": 0.5
             },
             hover: {
                 "fill-opacity": 0.8,
-                cursor: 'pointer'
+                "cursor": 'pointer'
             },
             selected: {
-                fill: '#5572f7'
-            },
-            selectedHover: {
+                "fill": '#050315'
             }
         },
         series: {
             regions: [{
                 values: stateData,
-                scale: ["#8499f5", "#3351d7"],
+                scale: ["#a9a6ff", "#3351d7"],
                 normalizeFunction: "polynomial"
             }]
         },

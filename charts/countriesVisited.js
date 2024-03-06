@@ -1,4 +1,4 @@
-var countriesVisited = echarts.init(document.getElementById('countriesVisited'), 'dark');
+var countriesVisited = echarts.init(document.getElementById('countriesVisited'));
 
 new ResizeObserver(() => countriesVisited.resize()).observe(document.getElementById('countriesVisited'));
 

@@ -4,27 +4,17 @@
     --font-bold: "Prompt", sans-serif;
     --font-regular: "Poppins", sans-serif;
 
-    /*! Old Colours !*/
-    /* --colour-regular: #3a3a3a;
-    --bg-regular: #fbfcfe;
-    --bg-secondary: #f3f3f6;
-    --colour-primary: #3351d7;
-    --colour-secondary: #8499f5;
-    --colour-accent: #5572f7; */
-
-    --colour-regular: #e3eaf4;
-    --bg-regular: #0a131e;
-    --bg-secondary: #101a25;
-    --colour-primary: #93b6e1;
-    --colour-secondary: #1f518d;
-    --colour-accent: #5484c7;
+    --colour-regular: #050315;
+    --bg-regular: #fbfbfe;
+    --bg-secondary: #ffffff;
+    --colour-primary: #433bd3;
+    --colour-secondary: #dedcff;
+    --colour-accent: #443dff;
 }
 
 ::selection {
     background-color: var(--colour-accent);
-
     color: var(--bg-secondary);
-
 }
 
 * {
@@ -37,7 +27,6 @@
     font-size: 1.2rem;
 
     color: var(--colour-regular);
-
 }
 
 html, body {
@@ -47,7 +36,6 @@ html, body {
     background-color: var(--bg-regular);
 
     overflow-x: hidden;
-
 }
 
 h1 {
@@ -80,12 +68,24 @@ h2 {
 
 h3 {
     position: relative;
-
-    font-family: var(--font-bold);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
     letter-spacing: -1px;
     word-spacing: -2px;
+
+}
+
+h2, h3, h4, h5, h6 {
+    max-width: 640px;
+    margin: auto;
+    text-align: left;
+}
+
+p {
+    font-size: 1.2rem;
+    max-width: 640px;
+    margin: auto;
+    text-align: justify;
 }
 
 a {
@@ -99,22 +99,91 @@ a:hover {
     text-decoration: none;
 }
 
+img {
+    margin: 0rem 1rem;
+
+    border-radius: 1rem;
+
+    box-shadow: #00000040 0px 2px 5px -1px, #0000004d 0px 1px 3px -1px;
+    width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+    width: inherit;
+    grid-column: 1;
+    background-color: var(--bg-secondary);
+
+    box-shadow: #0000001a 0px 4px 12px;
+    border-radius: 10px;
+    margin: 1.2rem;
+    padding: 0.9rem;
+
+    height: calc(100vh - 2.4rem);
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+
+}
+
+.sidebar > a {
+    min-width: max-content;
+    border-radius: 10px;
+    background-color: hsl(243, 100%, 93%, 30%);
+    font-weight: 700;
+    /* color: var(--colour-regular); */
+    padding: 10px;
+    max-height: min-content;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.sidebar > a:hover  {
+    text-decoration: dotted underline var(--colour-accent) 2px;
+}
+
+.sidebar > img {
+    width: 50%;
+    border: none;
+    box-shadow: none;
+    align-self: center;
+    margin: 2rem 0rem;
+}
 
 .wrapper {
-    width: 100vw;
+    width: 100%;
 
-    padding: 3.5rem 10rem;
+    padding: 0rem 7rem;
 
+    grid-column: 2;
+
+}
+
+.content {
+    margin: 1rem 0.8rem;
+    text-align: center;
+}
+
+.navigator {
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    padding: 2rem 0rem;
 }
 
 .footer {
     display: block;
 
-    width: 100vw;
+    width: inherit;
     margin: 1rem;
 
     text-align: center;
-
 }
 
 /* Other */
@@ -126,134 +195,34 @@ a:hover {
 
 }
 
-.content {
-    margin: 1rem 0.8rem;
-}
-
-.chartContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    margin: 5rem 0rem;
-
-}
-
-.chartFull {
-    display: flex;
-    flex-direction: column;
-
-    width: 100%;
-    margin: 5rem 0rem;
-
-}
-
-.chartAligner {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.chartAligner > * {
-    margin: 1rem 0rem;
-}
-
-.chartFull > div {
-    margin-top: 1rem;
-}
-
 /* Fix the plus and minus button size */
 .map > * > * {
     font-size: 0.8rem;
 }
 
 .map {
+    width: 100%;
     padding: 5px;
-    margin: 1rem;
 
-    border: 1px solid var(--bg-secondary);
-    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    border-radius: 7px;
 
     box-shadow: #ffffff40 0px 6px 12px -2px, #ffffff4d 0px 3px 7px -3px;
 }
 
-/* There is an issue on ultrawide screens where the header doesn't fill the entire width of the screen. This hopefully isn't my issue. */
-.header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 2fr;
-
-    position: fixed;
-
-    top: 0px;
-
-    /* Why does chrome have to be special and not respect the `width` style... */
-    /* width: calc(100vw - 20px); */ /* <-- Works on firefox but not on chrome. */
-    max-width: calc(100vw - 20px);
-
-    padding: 5px 0px;
-    margin: 10px;
-
-    background-color: var(--bg-secondary);
-
-    text-align: center;
-
-    border-radius: 1rem;
-
-    box-shadow: rgba(165, 165, 165, 0.137) 0px 7px 29px 0px;
-
-    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-    z-index: 999;
-
-}
-
-.header > a {
-    min-width: max-content;
-
-    padding: 7px 15px;
-    margin: 5px 10px;
-
-    background-color: var(--colour-accent);
-    color: var(--colour-regular);
-
-    font-weight: bold;
-    font-size: 1rem;
-
-    text-align: center;
-    text-decoration: none;
-
-    border-radius: 9999px;
-
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-    transition: all 0.3s ease-in-out;
-}
-
-.header > a:hover  {
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.header.fixedToTop {
-    position: fixed;
-
-    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-}
-
-.acrylic {
-    background: #ffffff36;
-
-    margin: 7px;
-
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-
-}
-
 .chart {
-    margin: 0rem 1rem;
+    width: 640px;
 
-    border-radius: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
-    box-shadow: #ffffff40 0px 2px 5px -1px, #ffffff4d 0px 1px 3px -1px;
+    border-radius: 7px;
+
+    box-shadow: #00000040 0px 2px 5px -1px, #0000004d 0px 1px 3px -1px;
 
 }
 

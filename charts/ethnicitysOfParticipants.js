@@ -1,4 +1,4 @@
-var ethnicitysOfParticipants = echarts.init(document.getElementById('ethnicitysOfParticipants'), 'dark');
+var ethnicitysOfParticipants = echarts.init(document.getElementById('ethnicitysOfParticipants'));
 
 new ResizeObserver(() => ethnicitysOfParticipants.resize()).observe(document.getElementById('ethnicitysOfParticipants'));
 

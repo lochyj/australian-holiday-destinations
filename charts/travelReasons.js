@@ -1,4 +1,4 @@
-var travelReasons = echarts.init(document.getElementById('travelReasons'), 'dark');
+var travelReasons = echarts.init(document.getElementById('travelReasons'));
 
 new ResizeObserver(() => travelReasons.resize()).observe(document.getElementById('travelReasons'));
 

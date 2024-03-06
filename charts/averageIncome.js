@@ -1,4 +1,4 @@
-var averageIncome = echarts.init(document.getElementById('averageIncome'), 'dark');
+var averageIncome = echarts.init(document.getElementById('averageIncome'));
 new ResizeObserver(() => averageIncome.resize()).observe(document.getElementById('averageIncome'));
 var averageIncomeOptions = {
   title: {
