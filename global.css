@@ -13,7 +13,7 @@
 }
 
 ::selection {
-    background-color: var(--colour-accent);
+    background-color: var(--colour-primary);
     color: var(--bg-secondary);
 }
 
@@ -35,7 +35,7 @@ html, body {
 
     background-color: var(--bg-regular);
 
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 h1 {
@@ -58,11 +58,8 @@ h1 {
 h2 {
     position: relative;
 
-    font-family: var(--font-bold);
+    font-family: var(--font-regular);
     font-size: 2.7rem;
-
-    letter-spacing: -1px;
-    word-spacing: -2px;
 
 }
 
@@ -70,9 +67,7 @@ h3 {
     position: relative;
     font-size: 1.6rem;
 
-    letter-spacing: -1px;
     word-spacing: -2px;
-
 }
 
 h2, h3, h4, h5, h6 {
@@ -85,7 +80,7 @@ p {
     font-size: 1.2rem;
     max-width: 640px;
     margin: auto;
-    text-align: justify;
+    text-align: left;
 }
 
 a {
@@ -110,7 +105,7 @@ img {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 376.96px 1fr; /* This is probably not the best way to do this... but it's easy */
 }
 
 .sidebar {
@@ -130,17 +125,18 @@ img {
 
     position: fixed;
 
+    overflow-y: auto;
+
 }
 
 .sidebar > a {
     min-width: max-content;
-    border-radius: 10px;
     background-color: hsl(243, 100%, 93%, 30%);
     font-weight: 700;
-    /* color: var(--colour-regular); */
+    border-radius: 10px;
     padding: 10px;
-    max-height: min-content;
     margin: 5px;
+    max-height: min-content;
     text-decoration: none;
 }
 
@@ -154,15 +150,22 @@ img {
     box-shadow: none;
     align-self: center;
     margin: 2rem 0rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar > h2 {
+    align-self: center;
+    font-size: 1.3rem;
+    margin: 1rem 0rem;
+    margin-top: 0rem;
+    font-weight: 900;
+    color: var(--colour-accent);
 }
 
 .wrapper {
     width: 100%;
-
     padding: 0rem 7rem;
-
     grid-column: 2;
-
 }
 
 .content {
@@ -191,7 +194,7 @@ img {
 .focus {
     color: var(--colour-accent);
 
-    font-weight: bold;
+    font-weight: 900;
 
 }
 
