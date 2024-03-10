@@ -34,13 +34,13 @@
                     <h4>Title Right</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
                 </div>
-                <img src="/australian-holiday-destinations/images/chart3.jpg" class="chart" style="width: 640px; height: 400px;">
+                <div class="chart map" id="map_aus_world" style="width: 640px; height: 600px;"></div>
 
                 <div>
                     <h4>Title left</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="focus">Repudiandae</span>, amet! Amet ea aut sed. Saepe ab odit ipsam corporis placeat doloremque harum accusamus quod atque molestiae provident non, at beatae?</p>
                 </div>
-                <img src="/australian-holiday-destinations/images/chart2.jpg" class="chart" style="width: 640px; height: 400px;">
+                <div class="chart map" id="map_in_au" style="width: 640px; height: 600px;"></div>
 
             </div>
 
@@ -53,6 +53,27 @@
         </div>
 
     </div>
+
+    <!-- Import eCharts js lib -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+    <!-- Import charts from charts folder -->
+    <!-- <script src="/australian-holiday-destinations/charts/continentsVisitedVsEthnicity.js"></script> -->
+
+    <!-- This pains me to do... -->
+    <!-- Import jquery because jVectorMap needs it... -->
+    <script src="/australian-holiday-destinations/libs/jquery-3.7.1.min.js"></script>
+
+    <!-- Import jVectorMap js lib and css from file -->
+    <script src="/australian-holiday-destinations/libs/jquery-jvectormap-2.0.5.min.js"></script>
+
+    <!-- Import the world and au vector maps (mercator projection) -->
+    <script src="/australian-holiday-destinations/libs/jquery-jvectormap-world-merc.js"></script>
+    <script src="/australian-holiday-destinations/libs/jquery-jvectormap-au-merc.js"></script>
+
+    <!-- Import maps from maps folder -->
+    <script src="/australian-holiday-destinations/maps/australians_in_australia.js"></script>
+    <script src="/australian-holiday-destinations/maps/australians_to_world.js"></script>
 
 </body>
 </html>
