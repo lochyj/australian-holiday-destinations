@@ -140,7 +140,7 @@ $(function() {
         series: {
             regions: [{
                 values: countryData,
-                scale: ["#3351d7", "#a9a6ff"],
+                scale: ["#a9a6ff", "#3351d7"],
                 normalizeFunction: "polynomial"
             }]
         },
