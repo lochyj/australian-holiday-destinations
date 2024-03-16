@@ -7,6 +7,10 @@ The class names don't follow a strict naming scheme and some class names don't i
 Hopefully the formatting helps.
 */
 
+/*
+I copied all of the box shadows from: https://getcssscan.com/css-box-shadow-examples
+*/
+
 :root {
     --font-bold: "Prompt", sans-serif;
     --font-regular: "Poppins", sans-serif;
